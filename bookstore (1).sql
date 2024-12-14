@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2024 at 09:59 AM
+-- Generation Time: Dec 14, 2024 at 10:22 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -39,20 +39,7 @@ CREATE TABLE `buku` (
 --
 
 INSERT INTO `buku` (`buku_id`, `judulBuku`, `penulis`, `harga`) VALUES
-(6, 'haikyu', 'Haruichi Furudate ah', 26500),
-(7, 'nia penjual bakwan', 'nia kurnia sari', 1000);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pelanggan`
---
-
-CREATE TABLE `pelanggan` (
-  `pelanggan_id` int(11) NOT NULL,
-  `nama` varchar(100) NOT NULL,
-  `email` varchar(100) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+(15, 'resep bakwan', 'ananda', 100000);
 
 --
 -- Indexes for dumped tables
@@ -65,13 +52,6 @@ ALTER TABLE `buku`
   ADD PRIMARY KEY (`buku_id`);
 
 --
--- Indexes for table `pelanggan`
---
-ALTER TABLE `pelanggan`
-  ADD PRIMARY KEY (`pelanggan_id`),
-  ADD UNIQUE KEY `email` (`email`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -79,13 +59,7 @@ ALTER TABLE `pelanggan`
 -- AUTO_INCREMENT for table `buku`
 --
 ALTER TABLE `buku`
-  MODIFY `buku_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
---
--- AUTO_INCREMENT for table `pelanggan`
---
-ALTER TABLE `pelanggan`
-  MODIFY `pelanggan_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `buku_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
